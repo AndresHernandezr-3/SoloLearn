@@ -1,0 +1,9 @@
+siblings = int(input());  # 3 Number of siblings
+popsicles = int(input()); # 9 Number of popsicles
+
+leftover = popsicles % siblings  # Calculate the leftover popsicles
+
+if leftover == 0:  # If there are no leftover popsicles...
+print("give away")
+else:  # If there are leftover popsicles...
+print("eat them yourself")
