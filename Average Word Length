@@ -1,6 +1,6 @@
 # In this exercise, we are trying to find the average number of letters used per word in an essay(string)
 # But also, there's a rule about not counting punctuation and to round the number up even the minimum decimal
-
+# Gives average word length without punctuation and rounding up, only alphabetic
 import math
 import string
 
