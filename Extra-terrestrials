@@ -1,0 +1,3 @@
+alienspeak = str(input())
+backwards = alienspeak[::-1]
+print(backwards)
