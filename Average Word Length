@@ -1,0 +1,18 @@
+# In this exercise, we are trying to find the average number of letters used per word in an essay(string)
+# But also, there's a rule about not counting punctuation and to round the number up even the minimum decimal
+
+import math
+import string
+
+essay = str(input())    #inputs the string
+separatewords = essay.split()   #Separates it into words
+eachwordletters = []    #Defining variable/initializing
+for word in separatewords:
+    if word.isalpha():
+        eachwordletters.append(word)    #filtering the alphabetic characters
+countedlett = [len(word) for word in eachwordletters] # This function counts the letters in each word and puts the number in an array
+sumofletters = sum(countedlett) #Sums every value in the array
+avgletters = sumofletters/len(separatewords)    #If you divide between number of words then it's the avg
+roundedavg = math.ceil(avgletters)  #This function rounds up even the lowest decimal.
+print(roundedavg)
+

@@ -1,3 +1,5 @@
+# This exercise is about wanting to understand aliens, who speak in a reverse fashion than us.
+
 alienspeak = str(input())
 backwards = alienspeak[::-1]
 print(backwards)
