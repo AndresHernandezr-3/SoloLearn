@@ -1,0 +1,9 @@
+# Manipulation of strings and appending, concatenating arrays of words
+pig_latin = str(input())
+pig_words = pig_latin.split()
+pig_trans_string = ""
+for word in pig_words:
+    pig_translate = word[1:] + word[0] + "ay"
+    pig_trans_string = pig_trans_string + pig_translate + " "
+pig_trans_string.join(pig_translate)
+print(pig_trans_string)
