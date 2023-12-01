@@ -1,1 +1,7 @@
+# A case of rounding down a division result
+import math
 
+totalfruit = int(input())
+apples = totalfruit/2
+pies = apples/3
+print(math.floor(pies))
