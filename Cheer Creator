@@ -1,0 +1,8 @@
+# According to conditionals, print multiple times different strings
+Yardsmoved = int(input())
+if Yardsmoved > 10:
+  print("High Five")
+if Yardsmoved < 1:
+  print("shh")
+else:
+  print("Ra!"*Yardsmoved)
