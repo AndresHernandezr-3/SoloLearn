@@ -5,4 +5,4 @@ if Yardsmoved > 10:         #If over 10 yards, it outputs a high five
 if Yardsmoved < 1:          #If less than 1 yard, it outputs shh
   print("shh")
 else:
-  print("Ra!"*Yardsmoved)   #In between (1 to 10), it outputs Ra!
+  print("Ra!"*Yardsmoved)   #In between (1 to 10), it outputs one Ra! for every yard
