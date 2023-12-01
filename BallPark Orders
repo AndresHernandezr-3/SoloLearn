@@ -1,0 +1,17 @@
+# Uses a dictionary to filter words in the input string and add prices and taxes of found items.
+Orderis = str(input())       
+Items = Orderis.split()
+notaxcost = 0
+taxedcost = 0
+print(len(Items))
+prices = {'Nachos': 6.00,'Pizza': 6.00,'Cheeseburger':10.00,'Water':4.00,'Coke':5.00}
+for word in Items:
+    cost = prices.get(word)
+    if cost:
+        notaxcost += cost
+    else:
+        notaxcost += 5.00
+notaxcost = float(notaxcost)
+taxedcost = notaxcost*1.07
+print(taxedcost)
+ 
