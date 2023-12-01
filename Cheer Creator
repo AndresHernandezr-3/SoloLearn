@@ -1,8 +1,8 @@
 # According to conditionals, print multiple times different strings
-Yardsmoved = int(input())
-if Yardsmoved > 10:
+Yardsmoved = int(input())   # Input number of yards team moved forward
+if Yardsmoved > 10:         #If over 10 yards, it outputs a high five
   print("High Five")
-if Yardsmoved < 1:
+if Yardsmoved < 1:          #If less than 1 yard, it outputs shh
   print("shh")
 else:
-  print("Ra!"*Yardsmoved)
+  print("Ra!"*Yardsmoved)   #In between (1 to 10), it outputs Ra!
