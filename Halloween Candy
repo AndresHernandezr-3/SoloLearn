@@ -1,5 +1,5 @@
 # Simple problem about a fixed value's percentage decreasing over increment in number of samples
-import math #Library for mathceil
+import math                     #Library for mathceil
 
 HousesVisited = int(input())    # Inputting integer >3
 Dollarperc = 200/HousesVisited  # If HousesVisited = 100% then 2 Houses with dollars represent how much % (Math Rule of three)
