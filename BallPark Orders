@@ -1,17 +1,17 @@
 # Uses a dictionary to filter words in the input string and add prices and taxes of found items.
-Orderis = str(input())       
-Items = Orderis.split()
-notaxcost = 0
+Orderis = str(input())      # Input order max 4 words taken, anything out of stock means Coke       
+Items = Orderis.split()[:4]     #Capture order and separate into array ONLY 4 WORDS
+notaxcost = 0       #Initializing variables of subtotal and total
 taxedcost = 0
-print(len(Items))
-prices = {'Nachos': 6.00,'Pizza': 6.00,'Cheeseburger':10.00,'Water':4.00,'Coke':5.00}
-for word in Items:
-    cost = prices.get(word)
+prices = {'Nachos': 6.00,'Pizza': 6.00,'Cheeseburger':10.00,'Water':4.00,'Coke':5.00}   #Dictionary! 
+for word in Items:                              #Iterating over every word in order
+    cost = prices.get(word)                     #Checking for words in dictionary
     if cost:
-        notaxcost += cost
+        notaxcost += cost                       #If product is in, add the value (cost) to subtotal
     else:
-        notaxcost += 5.00
-notaxcost = float(notaxcost)
-taxedcost = notaxcost*1.07
-print(taxedcost)
+        notaxcost += 5.00                       #Product or wrong word means they get Coke for 5$ (unfair)
+notaxcost = float(notaxcost)                    #Just making sure it's type float so no mistakes in 
+taxedcost = notaxcost*1.07                      #the multiplication with the TAX!
+roundedtaxed = round(taxedcost,2)               #Rounding so it doesn't give in extra decimals only 2
+print(roundedtaxed)                             #Result is price of the 4 items in the order!
  
