@@ -1,4 +1,4 @@
-# Manages a queue of customers by alphabetical orderwith number of agents and fixed service time (Output is the time you need to wait)
+# Manages a queue of customers by alphabetical order with number of agents and fixed service time (Output is the time you need to wait)
 Enteryourname2 = str(input("Enter your name:"))                     #Input name of customer that wants to know their time to wait
 Agentsavl2 = int(input("How many agents are available?:"))          #Number of agents available, all take 20 minutes
 OtherCustomers4 = list(map(str, (input("Enter 4 other customer names separated by space:")).split()))       #Other 4 customers in list arriving same time
