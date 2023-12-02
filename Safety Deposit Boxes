@@ -1,10 +1,9 @@
-# Word search in a string and add 5 to another variable until found.
-BoxItems = str(input())                     # They input the box items separated by a comma
-ValueItem = str(input)                      # Input the item to find
-ItemFind = BoxItems.replace(',',' ')        # Change comma to a space to use the split() function
-ItemFinder = ItemFind.split()               # Use split to Make the array of words
+# Multiple input word search in list of items separated by comma
+BoxItems = str(input("Box Items:"))                     # They input the box items separated by a comma
+ValueItem = str(input("Item to search:"))               # Input the item to find
+ItemFind = BoxItems.split(',')              # Use split to Make the array of words
 TimeSpent = 5                               #Initialize Time, first box search always happens and adds 5
-for word in ItemFinder:                     #Iterate through the words in array 
+for word in ItemFind:                       #Iterate through the words in array 
     if word != ValueItem:                   #Conditional, comparison of item in box to value item
         TimeSpent = TimeSpent + 5           #If It doesn't find it, add 5 to counter
     else:
