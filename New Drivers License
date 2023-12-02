@@ -1,0 +1,20 @@
+# Manages a queue of customers by alphabetical orderwith number of agents and fixed service time (Output is the time you need to wait)
+Enteryourname2 = str(input("Enter your name:"))                     #Input name of customer that wants to know their time to wait
+Agentsavl2 = int(input("How many agents are available?:"))          #Number of agents available, all take 20 minutes
+OtherCustomers4 = list(map(str, (input("Enter 4 other customer names separated by space:")).split()))       #Other 4 customers in list arriving same time
+OtherCustomers4.append(Enteryourname2)                                 #Adding your name to the list
+CapitalCustomers = []                                                   #Initializing capitalization
+for word in OtherCustomers4:
+    CapitalCustomers.append(word.capitalize())                          #Capitalizing just in case of mistype
+Alphacustomers5 = sorted(CapitalCustomers)                              #Ordering alphabetically
+Agentscounter = Agentsavl2 - 1                                          #Agent remaining counter while servicing
+QueueTime = 0                                                           #Initializing Time to wait
+for word in Alphacustomers5:                                            #Checking every customer in customer list(alphabetically)
+    if word == Enteryourname2:                                          #If the person in queue is You
+        break                                                           #Just print QueueTime
+    elif word != Enteryourname2 and Agentscounter == 0:                 #If it isn't you and there are no agents remaining 
+        QueueTime = QueueTime + 20                                      #Start waiting 20 minutes for all agents to free themselves
+        Agentscounter = Agentsavl2 - 1                                  #This also uses 1 agent
+    else:                                                               #(If there are available agents but it's not your name)
+        Agentscounter -=1                                               #Use an agent to service the customer        
+print(QueueTime)                                                        #When it hits your name, it breaks and prints output time you've waited
