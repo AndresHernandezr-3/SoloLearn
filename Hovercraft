@@ -1,0 +1,12 @@
+# Determines whether or not you made a profit 
+Sales_this_Month = int(input())
+
+Revenue = Sales_this_Month * 3000000
+Profit = Revenue - 21000000             # 21000000 is Expenses (10 hovercrafts costing 2mil each and 1mil insurance)
+
+if Profit > 0:
+    print("Profit")
+elif Profit == 0:
+    print("Broke Even")
+else:
+    print("Loss")
