@@ -1,4 +1,4 @@
-# Manages a queue of customers by alphabetical order with number of agents and fixed service time (Output is the time you need to wait)
+# Manages a queue of customers by alphabetical order with number of agents and fixed service time (Output is the time you need to get license)
 Enteryourname2 = str(input("Enter your name:"))                     #Input name of customer that wants to know their time to wait
 Agentsavl2 = int(input("How many agents are available?:"))          #Number of agents available, all take 20 minutes
 OtherCustomers4 = list(map(str, (input("Enter 4 other customer names separated by space:")).split()))       #Other 4 customers in list arriving same time
@@ -8,7 +8,7 @@ for word in OtherCustomers4:
     CapitalCustomers.append(word.capitalize())                          #Capitalizing just in case of mistype
 Alphacustomers5 = sorted(CapitalCustomers)                              #Ordering alphabetically
 Agentscounter = Agentsavl2 - 1                                          #Agent remaining counter while servicing
-QueueTime = 0                                                           #Initializing Time to wait
+QueueTime = 20                                                          #Initializing Time to wait for license
 for word in Alphacustomers5:                                            #Checking every customer in customer list(alphabetically)
     if word == Enteryourname2:                                          #If the person in queue is You
         break                                                           #Just print QueueTime
