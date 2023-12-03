@@ -1,0 +1,9 @@
+# Prints a message depending on number of Criminals
+Total_Criminals = int(input())
+
+if Total_Criminals < 5:
+    print("I got this!")
+elif Total_Criminals >= 5 and Total_Criminals <= 10:
+    print("Help me Batman")
+else:
+    print("Good Luck out there!")
