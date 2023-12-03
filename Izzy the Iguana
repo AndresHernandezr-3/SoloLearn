@@ -1,0 +1,14 @@
+# Use a Dictionary to assign values to food and send a message if values pass a threshold
+Snacks_List = str(input())
+SnacksOrder = Snacks_List.split()[:]
+Points_List={'Lettuce': 5,'Carrot': 4,'Mango': 9,'Cheeseburger': 0}
+Points_Total = 0
+for word in SnacksOrder:
+    Points_Found = Points_List.get(word)
+    if Points_Found:
+        Points_Total += Points_Found
+if Points_Total > 10:
+    print("Come on Down!")
+else:
+    print("Time to wait")
+
