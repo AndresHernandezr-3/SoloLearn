@@ -1,0 +1,8 @@
+# Calculates price and taxes given instructions of a trip to the store
+ColorsToBuy = int(input())
+
+TaxlessCost = 40.00 + ColorsToBuy*5.00
+TaxedCost = TaxlessCost*1.10
+RoundedCost = round(TaxedCost)       
+
+print(RoundedCost)
