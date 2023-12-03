@@ -1,0 +1,3 @@
+# Easy problem, not worth commenting
+FriendsCandles = int(input())
+print((FriendsCandles+1)*9)
