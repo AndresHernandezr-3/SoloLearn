@@ -1,0 +1,9 @@
+# Easter Egg Hunt making sure to get all eggs. (?)
+TotalEggs = int(input())
+YourBasket = int(input())
+FriendBasket = int(input())
+
+if YourBasket + FriendBasket == TotalEggs:
+    print("Candy Time")
+else:
+    print("Keep Hunting")
