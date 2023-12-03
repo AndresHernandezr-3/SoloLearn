@@ -1,0 +1,23 @@
+# Checks if in 4 words there's any palindromes and outputs Open if it finds any or trash if it doesn't
+Sign1 = str(input())            #Input the 4 signs
+Sign2 = str(input())
+Sign3 = str(input())
+Sign4 = str(input())
+
+def is_palindrome(string):              #Function to check for palindrome
+    string = string.lower() # In ascii better all lowercase to match
+    start = 0 # Starting letter
+    end = len(string) - 1 # Initialize ending letter
+    while start < end: # As long as the indices are within the string
+        if string[start] != string[end]: # comparing from outside to center matching letters
+            return False # return False
+        start += 1
+        end -= 1
+    return True
+
+if any(is_palindrome(string) for string in [Sign1, Sign2, Sign3, Sign4]):   #Calling palindrome for every sign
+    print("Open")                                                           #Using or logic if 1 true then open
+else:
+    print("Trash")                                                          #If there's no palindrome, trash!
+
+
