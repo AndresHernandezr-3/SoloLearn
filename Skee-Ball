@@ -2,7 +2,7 @@
 PointsScored = int(input())
 SGunTickets = int(input())
 
-if PointsScored/12 > SGunTickets:
+if PointsScored/12 >= SGunTickets:
     print("Buy it!")
 else:
     print("Try again")
