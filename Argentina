@@ -1,0 +1,9 @@
+# Takes a conversion rate and inputs which currency to use if it's higher or lower than value
+Price_in_Pesos = int(input())           #Price shown in Pesos
+Price_in_Dollars = int(input())         #Price shown in Pesos
+
+ConvertedPesos = Price_in_Pesos * 0.02          #Conversion rate 0.02 cents of Dollar per Peso
+if ConvertedPesos > Price_in_Dollars:           #Which one to use
+    print("Dollars")
+else:
+    print("Pesos")
