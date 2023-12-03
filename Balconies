@@ -1,0 +1,11 @@
+# Calculates the area of two apartments (Apartment A and Apartment B) based on their height and width.
+MeasurementsA = input().split(',') # Input height,width for apartment A
+MeasurementsB = input().split(',') # Input height,width for apartment B
+
+Area1 = int(MeasurementsA[0]) * int(MeasurementsA[1]) # Calculate area for apartment A
+Area2 = int(MeasurementsB[0]) * int(MeasurementsB[1]) # Calculate area for apartment B
+
+if Area1 > Area2:
+    print("Apartment A")
+else:
+    print("Apartment B")
