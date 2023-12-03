@@ -1,0 +1,6 @@
+# Calculate perimeter of a rectangular yard and outputs flamingo's every 2 feet
+Length_Yard = int(input())
+Width_Yard = int(input())
+
+Guard_Flamingo = ((2 * Length_Yard) + (2 * Width_Yard))/2
+print(round(Guard_Flamingo))
