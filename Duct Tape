@@ -1,0 +1,12 @@
+# After conversions, finds the number of duct tapes needed to cover the area of a door (front and back)
+HeightDoor = int(input())
+WidthDoor = int(input())
+
+DuctTapeArea = 60*(2/12)
+
+DoorArea = 2 * HeightDoor * WidthDoor
+
+if DoorArea > DuctTapeArea:
+    print(round(DoorArea/DuctTapeArea))
+else:
+    print(1)
